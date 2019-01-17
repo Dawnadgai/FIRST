@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>battle</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.create{
+    background-color: darkblue;
+    border-top:1px solid darkblue;
+    width: 100%;
+    height: 700px;
+}
+.create a{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+.create P{
+    max-width: 700px;
+    margin: 50px auto 0px auto;
+    color: gray;
+}
+.cc{
+    margin: 50px auto  0px auto;
+    width: 70%;
+    height: 250px;
+    border: 1px solid gainsboro;
+}
+.cc a{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.cc p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px; 
+}
+.cc input{
+    width: 30%;
+    height:40px;
+    background: transparent;
+    border: 1px solid gainsboro;
+    margin:50px 0px 0px 70px;
+}
+.btn{
+    width: 13%;
+    height: 43px;
+    margin-left: 30px;
+}
+.nav{
+    width: 100%;
+    height: 600px;
+}
+.nt a{
+    text-align: center;
+    display: block;
+    margin-top: 70px;
+}
+.nt p{
+    font-size: 40px;
+    max-width: 50%;
+    margin: 30px auto 0px auto;
+}
+.nav table{
+    width: 80%;
+    margin: 50px auto 0px auto;
+}
+.nav td{
+    width: 30%;
+    height: 100px;
+}
+.information
+{
+    background-color: darkslateblue;
+    width: 100%;
+    height: 600px;
+    color: white;
+    border: 1px solid darkslateblue;
+}
+.it{
+    width: 39%;
+    margin-left: 10%;
+    margin-top: 100px;
+    float: left;
+}
+.it p{
+    font-size: 50px;
+}
+.it a{
+    margin-top: 20px;
+    color: gainsboro
+}
+.btn2{
+    background: transparent;
+    border-style: solid;
+    margin-left: 10%;
+}
+.information button{
+    width: 40%;
+    height: 45px;
+    margin-top: 30PX;
+}
+.phone{
+    float: right;
+    width: 45%;
+    height: 450px;
+    margin-top: 75px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border: 1px solid gainsboro;
+}
+.ip{
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-top: 222px;
+    margin-left: 5%;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+}
+.pc{
+   width: 90%;
+   height: 400px;
+   margin-top: 25px;
+   float: right;
+   background-color: white;
+}
+.pc p{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+.pc a{
+    color: gray;
+    display: block;
+    text-align: center;
+}
+.pc ul{
+    list-style-type: none;
+    margin-left: 15%;
+}
+.pc li{
+    float: left;
+    width: 30%;
+    margin-top: 50px;
+}
+.pc img{
+    width: 80%;
+    height: 100px;
+}
+.pc li p{
+    font-size: 20px;
+    color: gray;
+    margin: 0px;
+    text-align: left;
+}
+.coc{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ct{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.content ul{
+    list-style-type: none;
+}
+.content li{
+    width: 33%;
+    display: inline-block;
+    margin-top: 50px;
+}
+.content li p{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    height: 50px;
+}
+.content li a{
+    color: gray;
+    max-width: 80%;
+    text-align: center;
+    display: block;
+}
+.content img{
+    width: 34%;
+    height: 200px;
+}
+.tu1,.tu2{
+    width: 90%;
+    height: 200px;
+    margin-top: 50px;
+}
+.tu1 img{
+    float: left;
+}
+.tu2 img{
+    float: right;
+}
+.imgc p{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font: 800;
+}
+.tu1 a{
+    text-align: center;
+    display: block;
+    max-width: 80%;
+}
+.tu2 a{
+    margin-left: 10%;
+    display: block;
+    min-width: 50%;
+}
+.introduction{
+    width: 100%;
+    margin-top: 50px;
+}
+.introduction p{
+    text-align: center;
+    font-size: 25px;
+}
+.ititle a{
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.introduction table{
+    margin: 50px auto 0px auto;
+}
+.introduction table img{
+    width: 300px;
+    height: 200px;
+}
+.write{
+    width: 49%;
+    margin-top: 50px;
+    height: 500px;
+    float: left;
+}
+.write input,.write button,textarea{
+    width: 280px;
+    height: 40px;
+    border: 1px solid gray;
+    margin: 30px auto 0px auto;
+    display: block;
+}
+textarea{
+    height: 100px;
+}
+.write button{
+    background-color: black;
+    color: white;
+}
+.contact{
+    height: 500px;
+    margin-top: 50px;
+}
+.contact img{
+    width: 30px;
+    height: 30px;
+}
+.contact a{
+    width: 700px;
+    color: gray;
+}
+.contact li a{
+    color: black;
+    float: right;
+}
+.footer{
+    width: 100%;
+    color: white;
+    height: 300px;
+    background-color: black;
+}
+.footer table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer td{
+    width: 25%;
+}
+.footer ul{
+    list-style-type: none;
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+.footer p{
+    color: white;
+}
+.footer li,.footer a{
+    margin-top: 20px;
+    color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="create">
+        <a>Hello World</a>
+        <p>How far I am away from the true temper of soul, this letter in its changing, uncertain moods, its scorn and bitterness, its aspirations and its failure to realise those aspirations, shows you quite clearly.
+             But do not forget in what a terrible school I am sitting at my desk. And incomplete, imperfect, as I am, yet from me you may have still much to gain.</p>
+        <div class="cc">
+            <a>CREATE YOUR ACCOUNT</a>
+            <P>IT IS ABSOLUTELY FREE</P>
+            <input type="text" name="" placeholder="audn@getcraftwork.com">
+            <input type="text" placeholder="Create your password">
+            <button class="btn">SIGN UP</button>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nt">
+        <a>BOATLOADS OF AWESOME</a>
+        <p>Ready-made,customizable,HTML landing page sections</p>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="#">
+                    <a>Mobile First</a>
+                    <p>All modulz are bult mobile first for maximum device compatibility</p>
+                </td>
+                <td>
+                    <img src="#">
+                    <a>Mobile First</a>
+                    <p>All modulz are bult mobile first for maximum device compatibility</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="#">
+                    <a>Mobile First</a>
+                    <p>All modulz are bult mobile first for maximum device compatibility</p>
+                </td> 
+                <td>
+                    <img src="#">
+                    <a>Mobile First</a>
+                    <p>All modulz are bult mobile first for maximum device compatibility</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="information">
+        <div class="it">
+        <p>
+            Supportive policies for China's smart car
+        </p>
+        <a>
+                She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure， how dear their dwelling-place．
+        </a>
+        <div>
+        <button class="btn1">CHECK OUT FEATURES</button>
+        <button class="btn2">TRY PRODUCT FOR FREE</button>
+    </div>
+    </div>
+        <div class="phone">
+            <div class="ip"></div>
+            <div class="pc">
+                <p>资料</p>
+                <a>这里有一些教程，文档或示例，可以帮助你学习</a>
+                <ul>
+                    <li>
+                        <img src="#">
+                        <p>教程</p>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <p>指南</p>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <p>示例</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="coc">
+        <p class="ct">Try Our Awesome Products</p>
+        <ul>
+            <li>
+                <p>Singletan</p>
+                <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure， how dear their dwelling-place．</a>
+            </li>
+            <li>
+                <p>HERO</p>
+                <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure， how dear their dwelling-place．</a>
+            </li>
+            <li>
+                <p>Poirtland</p>
+                <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure， how dear their dwelling-place．</a>
+            </li>
+        </ul>
+        <div class="imgc">
+        <div class="tu1">
+            <img src="#">
+            <p>Choose Between Two Beautifully Designed Color Schemes.</p>
+            <a>She walks in beauty，like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure.</a>
+        </div>
+        <div class="tu2">
+            <img src="#">
+            <p>Learn How to Improve Your Personal Business</p>
+            <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less，Had half impaired the nameless graceWhich waves in every raven tress，Or softly lightens o’er her face；Where thoughts serenely sweet expressHow pure， how dear their dwelling-place．</a>
+        </div>
+        </div>
+        <div class="introduction">
+            <div class="ititle">
+            <p>Our Awesome Crew</p>
+            <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．One shade more， one ray less.</a>
+            </div>
+            <table>
+                <tr>
+                    <td><img src="#"></td>
+                    <td><img src="#"></td>
+                </tr>
+                <tr>
+                    <td><img src="#"></td>
+                    <td><img src="#"></td>
+                </tr>
+            </table>
+            <div class="write">
+                <p>FELL FREE TO WRITE US</p>
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Subject">
+                <textarea name="contact" cols="20" rows="20" placeholder="Message"></textarea>
+                <button>SEND</button>
+            </div>
+            <div class="contact">
+                <p>Contacts</p>
+                <a>She walks in beauty， like the nightOf cloudless climes and starry skies；And all that’s best of dark and brightMeet in her aspect and her eyes；Thus mellowed to that tender lightWhich heaven to gaudy day denies．</a>
+                <ul>
+                    <li>
+                        <img src="#">
+                        <a>360 King Street</a>
+                    </br>
+                        <a>Feastrvale Trevose.PA 19057</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a>(755)564-84-12</a>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <a>yourname@mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li><p>LEARN MORE</p></li>
+                        <li>How it works?</li>
+                        <li>Meeting tools</li>
+                        <li>Live streaming</li>
+                        <li>Contact method</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><p>LEARN MORE</p></li>
+                        <li>How it works?</li>
+                        <li>Meeting tools</li>
+                        <li>Live streaming</li>
+                        <li>Contact method</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><p>LEARN MORE</p></li>
+                        <li>How it works?</li>
+                        <li>Meeting tools</li>
+                        <li>Live streaming</li>
+                        <li>Contact method</li>
+                    </ul>
+                </td>
+                <td>
+                    <p>ENJOY YOUR LIFE</p>
+                    <a>Creat web UI kit for designers,freelances or business.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
