@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            position:absolute;     
+            left:0;    
+            top:0;   
+            right:0;   
+            bottom:0;   
+            margin:auto;
+            background-color: white;
+        }
+        h1{
+            width: 150px;
+            height: 100px;
+            display: block;
+            font-weight: 500;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 100px;
+        }
+        h1.active{
+            color: blue;
+            border-bottom: 5px solid blue;
+            transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            -moz-transition: all .5s linear;
+            -o-transition: all .5s linear;
+        }
+        button{
+            margin: 50px auto 0px auto;
+            display: block;
+            width: 120px;
+            height: 35px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(128, 128,128,0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>前端学院</h1>
+        <button id="btn">切换样式</button>
+    </div>
+<script>
+    document.getElementById('btn').addEventListener('click', function () {
+        toggle();
+    })
+    function toggle() {
+        var dom = document.querySelector('h1');
+        if (!dom.className) 
+        {
+         dom.className = 'active';
+        }
+        else 
+        {
+            dom.className = '';
+        }
+    }
+</script>
+</body>
+</html>
